@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تسویه‌حساب | فروشگاه ساعت کرنو</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body data-page="cart">
+
+<div class="topbar">ارسال رایگان برای خریدهای بالای ۵,۰۰۰,۰۰۰ تومان | گارانتی فروشگاه برای تمام محصولات</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark">K</span> ساعت کرنو</a>
+    <nav class="nav-links">
+      <a href="index.html" data-nav="home">خانه</a>
+      <a href="products.html" data-nav="products">محصولات</a>
+      <a href="compare.html" data-nav="compare">مقایسه</a>
+      <a href="cart.html" data-nav="cart">سبد خرید</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="cart.html" class="cart-link">سبد خرید <span class="cart-count" data-cart-count>0</span></a>
+      <button class="nav-toggle" aria-label="باز کردن منو"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">خانه</a> / <a href="cart.html">سبد خرید</a> / تسویه‌حساب</div>
+    <h1>تکمیل سفارش</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    <div id="checkout-view" style="display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:start;">
+      <div class="form-card">
+        <h3 style="margin-bottom:18px;">اطلاعات گیرنده</h3>
+        <form id="checkout-form" novalidate>
+          <div class="grid-2">
+            <div class="field">
+              <label for="co-name">نام و نام خانوادگی</label>
+              <input type="text" id="co-name" name="name" required>
+              <span class="error-msg">لطفاً نام خود را وارد کنید.</span>
+            </div>
+            <div class="field">
+              <label for="co-phone">شماره موبایل</label>
+              <input type="tel" id="co-phone" name="phone" placeholder="09xxxxxxxxx" required>
+              <span class="error-msg">لطفاً یک شماره موبایل معتبر وارد کنید.</span>
+            </div>
+          </div>
+
+          <div class="grid-2">
+            <div class="field">
+              <label for="co-city">شهر</label>
+              <input type="text" id="co-city" name="city" required>
+              <span class="error-msg">لطفاً شهر خود را وارد کنید.</span>
+            </div>
+            <div class="field">
+              <label for="co-postal">کد پستی</label>
+              <input type="text" id="co-postal" name="postal">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="co-address">آدرس کامل</label>
+            <textarea id="co-address" name="address" rows="3" required></textarea>
+            <span class="error-msg">لطفاً آدرس کامل را وارد کنید.</span>
+          </div>
+
+          <div class="field">
+            <label>روش پرداخت</label>
+            <div class="pay-options">
+              <label class="pay-option active-pay">
+                <input type="radio" name="payment" value="آنلاین" checked> پرداخت آنلاین (درگاه بانکی)
+              </label>
+              <label class="pay-option">
+                <input type="radio" name="payment" value="درب منزل"> پرداخت در محل
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block" style="margin-top:10px;">ثبت نهایی سفارش</button>
+        </form>
+      </div>
+
+      <aside class="summary-card">
+        <h3 style="margin-bottom:16px;">سفارش شما</h3>
+        <div id="checkout-summary"></div>
+      </aside>
+    </div>
+
+    <div id="order-success">
+      <div class="cat-icon">✓</div>
+      <h2 style="margin-bottom:10px;">سفارش شما با موفقیت ثبت شد</h2>
+      <p style="color:var(--tan);margin-bottom:6px;">کد پیگیری سفارش: <span id="order-code-text"></span></p>
+      <p style="color:var(--tan);margin-bottom:26px;">همکاران ما پیش از ارسال، جهت هماهنگی نهایی با شما تماس خواهند گرفت.</p>
+      <a href="index.html" class="btn btn-primary">بازگشت به صفحه اصلی</a>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>ساعت کرنو</h4>
+        <p>فروشگاه تخصصی ساعت مچی مردانه و زنانه؛ عرضه‌ی برندهای سیکو، اورینت، سیتیزن، تیسو و کاسیو.</p>
+      </div>
+      <div>
+        <h4>دسترسی سریع</h4>
+        <ul>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="compare.html">مقایسه محصولات</a></li>
+          <li><a href="cart.html">سبد خرید</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>برندها</h4>
+        <ul>
+          <li>سیکو</li><li>اورینت</li><li>سیتیزن</li><li>تیسو</li><li>کاسیو</li>
+        </ul>
+      </div>
+      <div>
+        <h4>ارتباط با ما</h4>
+        <ul>
+          <li>تهران، خیابان شریعتی، پاساژ گوهر، طبقه ۱</li>
+          <li>۰۲۱-۷۷۸۸۹۹۰۰</li>
+          <li>info@kerono-watch.ir</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© ۱۴۰۴ ساعت کرنو. تمامی حقوق محفوظ است.</div>
+  </div>
+</footer>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>

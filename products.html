@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محصولات | فروشگاه ساعت کرنو</title>
+<meta name="description" content="مشاهده و مقایسه ساعت‌های مردانه، زنانه و یونیسکس از برندهای سیکو، اورینت، سیتیزن، تیسو و کاسیو.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/css/style.css">
+</head>
+<body data-page="products">
+
+<div class="topbar">ارسال رایگان برای خریدهای بالای ۵,۰۰۰,۰۰۰ تومان | گارانتی فروشگاه برای تمام محصولات</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand"><span class="brand-mark">K</span> ساعت کرنو</a>
+    <nav class="nav-links">
+      <a href="index.html" data-nav="home">خانه</a>
+      <a href="products.html" data-nav="products">محصولات</a>
+      <a href="compare.html" data-nav="compare">مقایسه</a>
+      <a href="cart.html" data-nav="cart">سبد خرید</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="cart.html" class="cart-link">سبد خرید <span class="cart-count" data-cart-count>0</span></a>
+      <button class="nav-toggle" aria-label="باز کردن منو"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">خانه</a> / محصولات</div>
+    <h1>همه‌ی ساعت‌های کرنو</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container shop-layout">
+    <aside class="filter-card">
+      <div class="filter-block">
+        <h4>برند</h4>
+        <div id="filter-brand"></div>
+      </div>
+      <div class="filter-block">
+        <h4>جنسیت</h4>
+        <label class="filter-opt"><input type="checkbox" class="f-gender" value="مردانه"> مردانه</label>
+        <label class="filter-opt"><input type="checkbox" class="f-gender" value="زنانه"> زنانه</label>
+        <label class="filter-opt"><input type="checkbox" class="f-gender" value="یونیسکس"> یونیسکس</label>
+      </div>
+      <div class="filter-block">
+        <h4>محدوده قیمت (تومان)</h4>
+        <div class="price-range-row">
+          <input type="number" id="price-min" placeholder="حداقل">
+          <span style="color:var(--ink-dim);">تا</span>
+          <input type="number" id="price-max" placeholder="حداکثر">
+        </div>
+      </div>
+      <button type="button" id="filter-apply-btn" class="btn btn-primary btn-block btn-sm">اعمال فیلتر</button>
+    </aside>
+
+    <div>
+      <div class="sort-bar">
+        <span class="result-count" id="result-count"></span>
+        <select id="sort-select">
+          <option value="new">جدیدترین</option>
+          <option value="price-asc">ارزان‌ترین</option>
+          <option value="price-desc">گران‌ترین</option>
+        </select>
+      </div>
+      <div class="grid-4" id="product-grid"></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>ساعت کرنو</h4>
+        <p>فروشگاه تخصصی ساعت مچی مردانه و زنانه؛ عرضه‌ی برندهای سیکو، اورینت، سیتیزن، تیسو و کاسیو.</p>
+      </div>
+      <div>
+        <h4>دسترسی سریع</h4>
+        <ul>
+          <li><a href="products.html">محصولات</a></li>
+          <li><a href="compare.html">مقایسه محصولات</a></li>
+          <li><a href="cart.html">سبد خرید</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>برندها</h4>
+        <ul>
+          <li>سیکو</li><li>اورینت</li><li>سیتیزن</li><li>تیسو</li><li>کاسیو</li>
+        </ul>
+      </div>
+      <div>
+        <h4>ارتباط با ما</h4>
+        <ul>
+          <li>تهران، خیابان شریعتی، پاساژ گوهر، طبقه ۱</li>
+          <li>۰۲۱-۷۷۸۸۹۹۰۰</li>
+          <li>info@kerono-watch.ir</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© ۱۴۰۴ ساعت کرنو. تمامی حقوق محفوظ است.</div>
+  </div>
+</footer>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
